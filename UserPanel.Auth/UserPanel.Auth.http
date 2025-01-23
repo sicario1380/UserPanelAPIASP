@@ -1,0 +1,6 @@
+@UserPanel.Auth_HostAddress = http://localhost:5280
+
+GET {{UserPanel.Auth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

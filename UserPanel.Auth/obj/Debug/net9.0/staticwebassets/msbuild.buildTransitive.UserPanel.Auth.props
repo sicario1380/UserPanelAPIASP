@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/UserPanel.Auth.props" />
+</Project>

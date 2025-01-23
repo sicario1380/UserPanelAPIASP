@@ -1,0 +1,5 @@
+curl --insecure -X POST https://localhost:5001/api/account/register -H "Content-Type: application/json" -d '{
+  "username": "user@example.com",
+  "email": "user@example.com",
+  "password": "UserPassword123!"
+}'

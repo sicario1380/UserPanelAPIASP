@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "bLDluI7zDmsRxdC9jo4TXHR1vziZHedfm34xyuvBi2M=",
+  "Source": "UserPanel.API",
+  "BasePath": "_content/UserPanel.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Auth/UserPanel.Auth.csproj",
+      "Version": 2,
+      "Source": "UserPanel.Auth",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

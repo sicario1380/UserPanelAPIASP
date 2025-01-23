@@ -1,0 +1,17 @@
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.csproj.AssemblyReference.cache
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.AssemblyInfoInputs.cache
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.AssemblyInfo.cs
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.csproj.CoreCompileInputs.cache
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/bin/Debug/net9.0/UserPanel.Data.deps.json
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/bin/Debug/net9.0/UserPanel.Data.runtimeconfig.json
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/bin/Debug/net9.0/UserPanel.Data.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/bin/Debug/net9.0/UserPanel.Data.pdb
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/bin/Debug/net9.0/UserPanel.Shared.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/bin/Debug/net9.0/UserPanel.Shared.pdb
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPane.1F7DC825.Up2Date
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/refint/UserPanel.Data.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.pdb
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/UserPanel.Data.genruntimeconfig.cache
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Data/obj/Debug/net9.0/ref/UserPanel.Data.dll

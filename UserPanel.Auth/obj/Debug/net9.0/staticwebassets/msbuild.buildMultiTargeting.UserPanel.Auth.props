@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/UserPanel.Auth.props" />
+</Project>

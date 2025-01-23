@@ -1,0 +1,12 @@
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/bin/Debug/net9.0/UserPanel.Shared.deps.json
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/bin/Debug/net9.0/UserPanel.Shared.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/bin/Debug/net9.0/UserPanel.Shared.pdb
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.AssemblyInfoInputs.cache
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.AssemblyInfo.cs
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.csproj.CoreCompileInputs.cache
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/refint/UserPanel.Shared.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.pdb
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/ref/UserPanel.Shared.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.csproj.AssemblyReference.cache
