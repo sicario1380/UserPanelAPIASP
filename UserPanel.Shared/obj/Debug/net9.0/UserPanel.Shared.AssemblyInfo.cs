@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserPanel.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12725815b6a50e5bbf5a18026b7457ff1d9fe2fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserPanel.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserPanel.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

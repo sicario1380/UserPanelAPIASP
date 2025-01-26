@@ -49,3 +49,4 @@ namespace UserPanel.Auth.Controllers
         string GenerateToken(ApplicationUser user);
     }
 }
+ 

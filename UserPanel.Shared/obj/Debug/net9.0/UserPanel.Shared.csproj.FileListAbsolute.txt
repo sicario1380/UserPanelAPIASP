@@ -10,3 +10,4 @@
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.pdb
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/ref/UserPanel.Shared.dll
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.csproj.AssemblyReference.cache
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Shared/obj/Debug/net9.0/UserPanel.Shared.sourcelink.json

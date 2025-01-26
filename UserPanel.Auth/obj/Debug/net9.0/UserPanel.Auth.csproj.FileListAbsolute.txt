@@ -161,3 +161,4 @@
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Auth/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Auth/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Auth/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Auth/obj/Debug/net9.0/UserPanel.Auth.sourcelink.json

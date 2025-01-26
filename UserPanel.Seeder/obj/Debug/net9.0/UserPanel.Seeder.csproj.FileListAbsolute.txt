@@ -23,3 +23,4 @@
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Seeder/obj/Debug/net9.0/refint/UserPanel.Seeder.dll
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Seeder/obj/Debug/net9.0/UserPanel.Seeder.pdb
 /home/erfan/DOTNET/Projects/UserPanel/UserPanel.Seeder/obj/Debug/net9.0/ref/UserPanel.Seeder.dll
+/home/erfan/DOTNET/Projects/UserPanel/UserPanel.Seeder/obj/Debug/net9.0/UserPanel.Seeder.sourcelink.json
