@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserPanel.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78bea706fdebd39f194e49e9e4d3c7d65a32d3b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39cbd1efee58db1b4b1c95b36de6a0f9d8bb9b1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserPanel.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserPanel.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

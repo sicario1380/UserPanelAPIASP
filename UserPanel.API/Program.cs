@@ -27,11 +27,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<UserPanelDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging()); 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection")));
-
+    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection")).EnableSensitiveDataLogging()); 
+    
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
@@ -104,7 +104,7 @@ using (var scope = app.Services.CreateScope())
         await appContext.Database.MigrateAsync();
 
         var seeder = services.GetRequiredService<DatabaseSeeder>();
-        await seeder.SeedDataAsync();
+        await seeder.SeedDataAsync();   
     }
     catch (Exception ex)
     {

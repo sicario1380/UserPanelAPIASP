@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UserPanel.Shared.Models;
-using UserPanel.Auth; // Ensure the namespace for ApplicationDbContext
-using UserPanel.Data; // Ensure the namespace for UserPanelDbContext
+using UserPanel.Auth;
+using UserPanel.Data;
 
 namespace UserPanel.Seeder
 {
@@ -27,20 +27,18 @@ namespace UserPanel.Seeder
 
             if (await _appContext.Tickets.AnyAsync())
             {
-                return; // Database has been seeded
+                return; // Database already seeded, exit
             }
 
             var tickets = GenerateTickets(20);
             await _appContext.Tickets.AddRangeAsync(tickets);
-
-            await _appContext.SaveChangesAsync(); // Await SaveChangesAsync
+            await _appContext.SaveChangesAsync(); // Save generated tickets
 
             await SeedFollowUpChatsAsync(tickets); // Seed related chats
         }
 
         private async Task SeedIdentityDataAsync()
         {
-            // Create roles if they do not exist
             string[] roles = { "Admin", "User" };
             foreach (var role in roles)
             {
@@ -50,7 +48,6 @@ namespace UserPanel.Seeder
                 }
             }
 
-            // Create default users if they do not exist
             var adminEmail = "admin@example.com";
             var userEmail = "user@example.com";
 
@@ -62,10 +59,10 @@ namespace UserPanel.Seeder
                     Email = adminEmail,
                     FirstName = "Admin",
                     LastName = "User",
-                    DateOfBirth = DateTime.Now.AddYears(-30), // Example date of birth
+                    DateOfBirth = DateTime.Now.AddYears(-30),
                     PhoneNumber = "123-456-7890"
                 };
-                await _userManager.CreateAsync(adminUser, "AdminPassword123!"); // Use a strong password
+                await _userManager.CreateAsync(adminUser, "AdminPassword123!");
                 await _userManager.AddToRoleAsync(adminUser, "Admin");
             }
 
@@ -80,7 +77,7 @@ namespace UserPanel.Seeder
                     DateOfBirth = DateTime.Now.AddYears(-25),
                     PhoneNumber = "098-765-4321"
                 };
-                await _userManager.CreateAsync(regularUser, "UserPassword123!"); // Use a strong password
+                await _userManager.CreateAsync(regularUser, "UserPassword123!");
                 await _userManager.AddToRoleAsync(regularUser, "User");
             }
         }
@@ -88,14 +85,18 @@ namespace UserPanel.Seeder
         private List<Ticket> GenerateTickets(int count)
         {
             var tickets = new List<Ticket>();
+            var random = new Random();
+            string[] ticketTypes = { "Technical Issue", "Billing Inquiry", "Account Support", "General Inquiry" };
+            string[] statuses = { "Open", "In Progress", "Closed" };
+
             for (int i = 1; i <= count; i++)
             {
                 tickets.Add(new Ticket
                 {
-                    TicketType = $"Type {i % 4 + 1}",
-                    Subject = $"Subject {i}",
-                    Description = $"Description for ticket {i}.",
-                    Status = (i % 3 == 0) ? "Closed" : (i % 2 == 0) ? "In Progress" : "Open",
+                    TicketType = ticketTypes[i % ticketTypes.Length], // Cycles through defined ticket types
+                    Subject = $"Issue {i}: {ticketTypes[i % ticketTypes.Length]}", // More descriptive subject
+                    Description = $"User reported a {ticketTypes[i % ticketTypes.Length].ToLower()} issue.",
+                    Status = statuses[random.Next(statuses.Length)], // Randomly assigns a status
                     DateIssued = DateTime.Now.AddDays(-i),
                     LastUpdate = DateTime.Now
                 });
@@ -125,12 +126,13 @@ namespace UserPanel.Seeder
             var random = new Random();
             int numberOfChats = random.Next(1, 4);
             var chats = new List<FollowUpChat>();
+
             for (int i = 1; i <= numberOfChats; i++)
             {
                 chats.Add(new FollowUpChat
                 {
                     TicketID = ticket.TicketID,
-                    Message = $"Chat message {i} for ticket {ticket.TicketID}.",
+                    Message = $"Chat message {i} related to {ticket.Subject}.",
                     Sender = (i % 2 == 0) ? "User" : "Agent",
                     DateSent = ticket.DateIssued.AddHours(i * 2)
                 });

@@ -29,6 +29,7 @@ namespace UserPanel.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<List<TicketDto>>> GetTickets()
         {
             try
@@ -45,6 +46,7 @@ namespace UserPanel.API.Controllers
         }
 
         [HttpGet("{id:int}")]
+        [Authorize]
         public async Task<ActionResult<TicketDto>> GetTicket(int id)
         {
             try
@@ -96,7 +98,7 @@ namespace UserPanel.API.Controllers
         {
             if (id != ticketDto.TicketID || !ModelState.IsValid)
             {
-                return BadRequest(); // Or return detailed validation errors
+                return BadRequest(); 
             }
 
             try
@@ -107,8 +109,8 @@ namespace UserPanel.API.Controllers
                     return NotFound();
                 }
 
-                _mapper.Map(ticketDto, existingTicket); // Update existing ticket
-                existingTicket.LastUpdate = DateTime.UtcNow; // Update last update time
+                _mapper.Map(ticketDto, existingTicket);
+                existingTicket.LastUpdate = DateTime.UtcNow; 
                 await _ticketRepository.UpdateTicketAsync(existingTicket);
                 return NoContent();
             }
